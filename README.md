@@ -7,5 +7,5 @@ $ npm start
 or in docker
 
 ```sh
-$ docker build -t gh-oauth-server . && docker run -p 3000:3000 -d gh-oauth-server
+$ docker build -t gh-oauth-server . && docker run -p <your-port>:3000 -e CLIENT_SECRET=<your-client-secret> -d gh-oauth-server
 ```
